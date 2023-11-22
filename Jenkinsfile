@@ -31,7 +31,8 @@ pipeline {
                     stage('Integration test') {
                        agent {
                          docker {
-                           image 'alpine:3.18.4'
+                           label 'docker'
+                           image 'python:3.7'
                          }
                        }
                        steps {
