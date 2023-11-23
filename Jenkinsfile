@@ -29,12 +29,7 @@ pipeline {
                       }
                     }
                     stage('Integration test') {
-                       agent {
-                         docker {
-                           
-                           image 'python:3.7'
-                         }
-                       }
+
                        steps {
                          echo "Running the integration test..."
                        }
