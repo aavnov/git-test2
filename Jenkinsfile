@@ -11,7 +11,7 @@ pipeline {
   stages {
           stage('Init') { 
             steps {
-                sh 'npm init'
+                sh 'npm init -y'
             }
           }
           stage('Build') {
