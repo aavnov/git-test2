@@ -1,10 +1,10 @@
 pipeline {
-                         agent {
-                         docker {
-                           image 'python:3.7'
-                           reuseNode true
-                         }
-                       }
+    agent {
+        docker {
+            image 'node:6-alpine'
+            args '-p 3000:3000'
+        }
+    }
   stages {
           stage('One') {
             steps {
