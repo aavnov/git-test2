@@ -11,6 +11,7 @@ pipeline {
   stages {
           stage('Build') {
             steps {
+            sh 'npm init'
             sh 'pwd'
             sh 'du -a'
                 sh 'npm install'
