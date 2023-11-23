@@ -14,6 +14,11 @@ pipeline {
                 sh 'npm install'
             }
           }
+          stage('Test') { 
+            steps {
+                sh './jenkins/scripts/test.sh' 
+            }
+        }
           stage('One') {
             steps {
               echo 'Hi, this is Zulaikha from edureka'
