@@ -9,7 +9,6 @@ pipeline {
         CI = 'true' 
     }
   stages {
-          stage
           stage('Build') {
             steps {
             sh 'npm init'
