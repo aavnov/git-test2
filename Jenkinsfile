@@ -9,9 +9,13 @@ pipeline {
         CI = 'true' 
     }
   stages {
+          stage('Init') { 
+            steps {
+                sh 'npm init'
+            }
+          }
           stage('Build') {
             steps {
-            sh 'npm init'
             sh 'pwd'
             sh 'du -a'
                 sh 'npm install'
@@ -21,7 +25,7 @@ pipeline {
             steps {
                 sh './jenkins/scripts/test.sh' 
             }
-        }
+          }
           stage('One') {
             steps {
               echo 'Hi, this is Zulaikha from edureka'
