@@ -9,11 +9,11 @@ pipeline {
         CI = 'true' 
     }
   stages {
-          stage('Init') { 
-            steps {
-                sh 'npm init -y'
-            }
-          }
+//          stage('Init') { 
+  //          steps {
+    //            sh 'npm init -y'
+      //      }
+        //  }
           stage('Build') {
             steps {
             sh 'pwd'
