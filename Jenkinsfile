@@ -8,12 +8,12 @@ pipeline {
     environment {
         CI = 'true' 
     }
-    stage('Test1') {
+  stages {
+        stage('Test1') {
             steps {
                 sh './jenkins/scripts/test.sh'
             }
-    }
-  stages {
+        }
 //          stage('Init') { 
   //          steps {
     //            sh 'npm init -y'
